@@ -32,7 +32,7 @@ def getCoord(automata):
 
     return x, y
 
-def animate(i, automata): 
+def animate(i, automata=[]): 
     rule90(automata, i)
 
     x,y = getCoord(automata)
@@ -53,7 +53,7 @@ def init():
     ax.set_xticks([], [])  
     ax.set_yticks([], []) 
 
-HEIGHT = 16
+HEIGHT = 128
 WIDTH = HEIGHT*2+1
 
 automata = []
@@ -61,8 +61,11 @@ automata = []
 fig = plt.figure()
 ax = plt.axes()
 
+'''code to generate a gif animation of HEIGHT layers'''
 # anim = animation.FuncAnimation(fig, animate, init_func=init, frames=HEIGHT, interval=10, blit=False)
 # anim.save("automata.gif")
+
+'''code to generate an image of HEIGHT layers'''
 generate(HEIGHT, automata)
 plt.show()
 
