@@ -1,11 +1,13 @@
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+import random
 
 def rule90(arr, index):
     row = []
     for i in range(WIDTH):
         if index==0:
             if i==HEIGHT:
+            # if random.random() < 0.5:
                 row.append(1)
             else:
                 row.append(0)
@@ -53,7 +55,7 @@ def init():
     ax.set_xticks([], [])  
     ax.set_yticks([], []) 
 
-HEIGHT = 128
+HEIGHT = 60
 WIDTH = HEIGHT*2+1
 
 automata = []
