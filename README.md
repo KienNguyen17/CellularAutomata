@@ -6,11 +6,13 @@ cd src
 ```
 
 Activate the virtual environment .venv
-    for Windows
+
+- for Windows
 ```
 .venv\Scripts\activate 
 ```
-    for MacOS
+
+- for MacOS
 ```
 source .venv/bin/activate 
 ```
