@@ -6,9 +6,13 @@ cd src
 ```
 
 Activate the virtual environment .venv
+    for Windows
 ```
-.venv\Scripts\activate for Windows
-source .venv/bin/activate for MacOS
+.venv\Scripts\activate 
+```
+    for MacOS
+```
+source .venv/bin/activate 
 ```
 
 Install the required packages in requirements.txt by running the following line in terminal
