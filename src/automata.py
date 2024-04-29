@@ -1,7 +1,9 @@
+# Author: Kien Nguyen
+
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-HEIGHT = 60
+HEIGHT = 60 # number of layers of the automata
 WIDTH = HEIGHT*2+1
 
 automata = []
